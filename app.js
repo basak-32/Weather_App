@@ -33,12 +33,12 @@ form.addEventListener('submit', event => {
       temp.innerHTML = cityWeather.Temperature.Metric.Value;
       
       if (cityWeather.IsDayTime) {
-        cardImg.setAttribute('src', './img/day.svg');
+        cardImg.setAttribute('src', '/img/day.svg');
       } else {
-        cardImg.setAttribute('src', './img/night.svg');
+        cardImg.setAttribute('src', '/img/night.svg');
       }
       
-      weatherIcon.setAttribute('src', `./img/icons/${cityWeather.WeatherIcon}.svg`);
+      weatherIcon.setAttribute('src', `/img/icons/${cityWeather.WeatherIcon}.svg`);
     })
   })
   .catch(error => console.log('oppss!', error));
